@@ -1,0 +1,32 @@
+function getEmployee(id) {
+    return {
+        name: "Jan",
+        age: 35,
+        address: "Jasna 14",
+        city: "Warszawa"
+    };
+}
+
+// const {name: fullName, age} = getEmployee(22);
+// console.log("employee", fullName, age)
+
+function getWorkInfo(id){
+    return [id, "Jasna", "Warsaw"];
+}
+
+const [id, officeAddress] = getWorkInfo(33);
+console.log("pracownik", id, officeAddress);
+
+// const {name = "nieznany", salary = 0} = getEmployee(44);
+
+const {name, age, ...rest} = getEmployee(99);
+console.log(rest)
+
+const [first,...remaining] = getWorkInfo(213);
+console.log(remaining)
+
+const [, ,place] = getWorkInfo(43);
+console.log(place)
+
+
+

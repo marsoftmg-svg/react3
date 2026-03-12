@@ -1,0 +1,20 @@
+{
+  "env": {
+    "browser": true,
+    "es2022": true,
+    "node": true
+  },
+  "extends": ["eslint:recommended"],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-unused-vars": "error",      // błąd: nieużywane zmienne
+    "no-console": "warn",           // ostrzeżenie: console.log
+    "eqeqeq": "error",              // wymagaj === zamiast ==
+    "prefer-const": "error",        // const nad let gdy możliwe
+    "arrow-body-style": ["warn", "as-needed"],
+    "no-var": "error"              // zakaz var!
+  }
+}

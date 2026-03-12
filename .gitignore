@@ -4,8 +4,7 @@
 ### Node ###
 # Logs
 #test
-JS/
-TS/
+
 my-App/node_modules/
 
 logs
